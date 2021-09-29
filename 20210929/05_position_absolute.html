@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        .mini_box {
+            width: 200px;
+            height: 30px;
+            /* 부모가 static이 아닌 경우에는 */
+            /* 부모태그를 기준으로 절대좌표 */
+            /* 부모태그가 static인 경우에는 fixed와 똑같이 동작 */
+            position: absolute;
+        }
+
+        .red {
+            background-color: red;
+            left: 50px;
+            top: 50px
+        }
+
+        .green {
+            background-color: green;
+            position: relative;
+            left: 300px;
+            top: 30px
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: pink;
+            left: 500px;
+            top:500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red">
+        <div class="mini_box pink">rrrrrrrrrrrrrrr</div>
+    </div>
+    <div class="box green">
+        <div class="mini_box pink">gggggggggggggggg</div>
+    </div>
+    <div class="box blue"></div>
+</body>
+
+</html>

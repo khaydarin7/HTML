@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 원점을 기준으로!!! */
+        /* 무조건 정해진 위치로(고정된 위치, 절대좌표) 이동 */
+        /* 절대좌표계 */
+        .box {width: 100px; height: 100px;}
+        .red{background-color: red;
+        position:fixed;
+        left:50px;
+        top:50px}
+        .green{background-color: green;
+            position:fixed;
+        left:300px;
+        top:30px}
+        .blue{background-color: blue;}
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+</html>
